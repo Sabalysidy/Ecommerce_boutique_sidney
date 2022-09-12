@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidney</title>
+    <link rel="stylesheet" href="Sidney.css">
+    <!----------------------------------------------- Bootstrap links -------------------------------------------------------->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <!----------------------------------------------- Bootstrap links ------------------------------------------------------>
+    <!--------------------------------------------------- icons links -------------------------------------------------------->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--------------------------------------------------- icons links ---------------------------------------------->
+</head>
+<body>
+    <!----------------------------------------------------- NAVBAR ------------------------------------------------->
+    <nav class="navbar navbar-expand-sm" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo"><img src="./icons/chariot.jpg" alt="" width="40px" style="margin-bottom: 5px; margin-right: 5px;"><span id="titre" style="color: blue; font-size: 23px;">S</span>IDNEY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span><img src="./icons/menu.png" alt="" width="20px" style="margin-right: 10px;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Sidney.html"> Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact US</a>
+              </li>
+            </ul>
+        </div>
+        <!-- <div class="icons" style="margin-right: 20px;">
+            <i class="bi bi-bag-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+              </svg>
+            <span class="align-center">0</span>
+        </div> -->
+        <div class="iconss" style="margin-left: 50px;">
+            <i class="bi bi-bell-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+              </svg> 
+            <!-- <span class="align-centere">5</span> -->
+        </div>
+<!---------------------------------------------------- LOGIN --------------------------------------------------------->
+<div class="connexion">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px;" >Login</button>
+<div id="id01" class="modale">
+  <form class="modale-content animate" action="traitement.php" method="post">
+    <div class="imgcontaineur">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./icons/avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="containeur">
+        <h1 style="text-align: center; font-size: 25px; font-weight: bold;">Login</h1>
+        <p>Entrer vos coordonnées pour vous connectez à votre compte</p><hr>
+      <label for="uname"><b>E-mail/Telephone</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="containeur" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signbtn"><a href="formulaire2.html">Sign Up</a></button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> 
+<!----------------------------------------------------- FIN LOGIN --------------------------------------------------->
+        </div>
+      </nav>
+      <div class="input-cnt">
+        <input type="text" placeholder="Search here...">
+      </div>
+<!------------------------------------------------- FIN NAVBAR ----------------------------------------------------->
+<!------------------------------------------------ HOME SECTION ---------------------------------------------------->
+<section class="home" id="home">
+    <div class="content">
+        <h3>La plus Grosse Vente</h3>
+        <h2>Category <span class="changecontent"></span></h2>
+        <p>Jusqu'à 20% de réduction sur nos produit du 08 AU 15 OCTOBRE 2023 <br>SIDNEY la meilleur des boutiques en ligne au Sénégal</p>
+        <h5>Jusqu'à 20% de Réduction</h5>
+        <a href="#" class="btn">Achetez ici</a>
+    </div>
+    <div class="img">
+        <img src="./image/ferli.png" alt="">
+    </div>
+</section>
+<!-------------------------------------------- FIN HOME SECTION ---------------------------------------------------->
+<!--------------------------------------------- TOP CARD START ----------------------------------------------------->
+<div class="container" style="margin-top: 50px;">
+    <div class="row" id="t-cards">
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/28.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/19.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/22.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------- FIN TOP CARD START ------------------------------------------------->
+<!----------------------------------------------- PRODUIT CARDS ---------------------------------------------------->
+<div class="container" id="product-cards">
+<!---------------------------------------------------- 1111 ------------------------------------------------------->
+    <h1 class="text-center">PRODUITS</h1>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/image3.jpg" alt="">
+
+                <div class="card-body">
+                    <!-- produit description -->
+                    <h3 class="text-center" style="font-size: 20px;">Pull stranger</h3>
+                    <!-- produit description -->  
+                    <div class="star text-center">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                      </div>
+                      <h5>10 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                  </div>
+              </div>
+          </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/images51.jpg" alt="">
+              
+              <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">T-Shirt</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>3 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/image54.jpg" alt="">
+            
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Super Chaussure</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>15 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/image3.jpg" alt="">
+          
+          <div class="card-body">
+            <h3 class="text-center" style="font-size: 20px;">Shirt4</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <!------------------------------------------------------- 2222 -------------------------------------------------->
+  <div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/chaussures4.jpg" alt="">
+               
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Shoes ClassiQ</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>20 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/louis-vuitton-tee-shirt.webp" alt="">
+              
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">T-shirt Louis Vuitton</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/GLOBAL-AIR-39-GE-39-HD-LED-ANDROID-SMART-TV.jpg" alt="">
+            
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Television</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>115 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/ecouteur.jpg" alt="">
+         
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">Casque Boss</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>9 900Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+<!----------------------------------------------------- 3333 ------------------------------------------------------>
+  <div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/images74.jpg" alt="">
+               
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Shirtmulticolor</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>4000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/Electromenager-dakar-16-1200x1200.png" alt="">
+             
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Pant2</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/pant4.jpg" alt="">
+          
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Pantalon</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>2 500Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/shoeasss.jpg" alt="">
+        
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">Chaussure sport</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>7 999Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+<!-------------------------------------------------------- 4444 --------------------------------------------------->
+  <div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/refrigerate-astech.jpg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Refrigerateur</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>80 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/images (24).jpeg" alt="">
+             
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Airpod huawei</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>6 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/kxwus_512.jpg" alt="">
+           
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Nouvelle Chaussure</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>12 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/ordinateur-portable-chromebook.jpg" alt="">
+         
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">Ordinateur ACER</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>260 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <!---------------------------------------------------- 5555  --------------------------------------------------->
+  <div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/sandal.jpg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Chaussure nP</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>2 350Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/Support-electromenager-sans-roue.jpg" alt="">
+             
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Machine lavé</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>80 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/mens-sports-t-shirt-1580877431-5283090.jpeg" alt="">
+        
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Lotde 3M-Sport</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>3 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/vje6h_512.jpg" alt="">
+       
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">NiceShoes</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>13 500Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+<!--------------------------------------------------- 6666 -------------------------------------------------------->
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/t141.jpg" alt="">
+              
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">T-SHIRT Lvuitton</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>6 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/Tyrrell_Winston_Question_Mid_Shoes_White_GZ1565.jpg" alt="">
+              
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Basquet</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>20 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/petit-electro-cuisine.jpg" alt="">
+            
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Chauffe-eau</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>7 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/MIONE-S20.png" alt="">
+          
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">Telephone Mione</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>75 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+<!------------------------------------------------------ 7777 ----------------------------------------------------->
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/images (21).jpeg" alt="">
+             
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Ecouteur bluetooth</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>2 500Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/images (25).jpeg" alt="">
+           
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Talon</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/firgo.png" alt="">
+           
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Congelateur</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>180 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/azerty.jpg" alt="">
+         
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">Pantalon Sport </h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>4 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+<!---------------------------------------------------- 8888 ------------------------------------------------------>
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/Como_Suit_Pants-Pants-LDM501001-350350-Dark_Grey_Melange_600x.png" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Pantalon kaki</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>3 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/image kufdj.jpeg" alt="">
+              
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Pant Chinois</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>5 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/image6.jpg" alt="">
+           
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Ensemble Messi</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>8 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/images50.jpeg" alt="">
+         
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">T-Shirt N/B</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>2 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+<!---------------------------------------------------- 9999 ------------------------------------------------------->
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/images (3).jpeg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">T-Shirt blue</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>2 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/imagessesuz.jpg" alt="">
+              
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Marron-Shoes</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>19 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/Custom-T-Shirts-100-Cotton-Men.jpg" alt="">
+           
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">T-Shirt logo</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>8 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/chaussures5.jpg" alt="">
+          
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">Chaussure classiQ Noir</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>25 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+  <hr>
+<!----------------------------------------------------- 1010 ------------------------------------------------------>
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/images (22).jpeg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Sport1</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <img src="./image/images (5).jpeg" alt="">
+              
+              <div class="card-body">
+                  <h3 class="text-center" style="font-size: 20px;">Sport2</h3>
+                  <div class="star text-center">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                  </div>
+                  <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./image/sport3.jpeg" alt="">
+            
+            <div class="card-body">
+                <h3 class="text-center" style="font-size: 20px;">Sport3</h3>
+                <div class="star text-center">
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                    <i class="bx bxs-star checked"></i>
+                </div>
+                <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+          <img src="./image/t-shirt-sportee-100-coton-homme-blanc.jpg" alt="">
+         
+          <div class="card-body">
+              <h3 class="text-center" style="font-size: 20px;">Sport4</h3>
+              <div class="star text-center">
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+                  <i class="bx bxs-star checked"></i>
+              </div>
+              <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+          </div>
+      </div>
+  </div>
+<hr>
+</div>
+</div>
+<!------------------------------------------------ FIN PRODUIT CARDS ----------------------------------------------->
+<!--------------------------------------------------------- BANNER ------------------------------------------------->
+<div class="container">
+    <section class="banner" id="banner">
+    <div class="banner-content">
+        <h1>Special<span>Collection</span></h1>
+        <p>Nos produits pour parfumer votre vie. <br>SIDNEY la boutique pour vous rendre votre bonheur 
+        </p>
+        <h5>UPTO 15% OFF</h5>
+        <a href="#" class="btn">Achetez ici</a>
+    </div>
+    <div class="img">
+        <img src="./image/image8.jpg" alt="">
+    </div>
+</section>
+</div>
+<!-------------------------------------------------- FIN BANNER ---------------------------------------------------->
+<!-------------------------------------------------- OTHER PRODUCT ------------------------------------------------->
+<!------------------------------------------------------ 111& ----------------------------------------------------->
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/sac6 (1).jpg" alt="">
+               
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Sac1</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/sac4.jpg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Sac2</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/sac2.jpg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Sac3</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/sac3.jpg" alt="">
+             
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 20px;">Sac à main Noir</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>9 500Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------------------------------------- 2222 ---------------------------------------------------->
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/29.jpg" alt="">
+               
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 15px;">Maillot Paris2023</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>14 900Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/26.jpg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 15px;">Maillot Marseil2023</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>14 900Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/24.jpg" alt="">
+                
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 15px;">Maillot Inter2023</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>14 900Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./image/21.jpg" alt="">
+               
+                <div class="card-body">
+                    <h3 class="text-center" style="font-size: 15px;">Maillot Chelsea2023</h3>
+                    <div class="star text-center">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                    </div>
+                    <h5>14 900Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------------- FIN OTHER PRODUCT --------------------------------------------->
+<!----------------------------------------------------- ABOUT US --------------------------------------------------->
+<div class="container" id="about">
+    <h1>ABOUT US</h1>
+    <hr>
+    <p>jdkjsl ojudo piod oihsp ppojids podkjc pooids oijicuscps oijkods oyudsqusq iuyysI IYFDIIS ihdy</p>
+    <hr>
+</div>
+<!--------------------------------------------------------- FIN ABOUT US ----------------------------------------------->
+<!------------------------------------------------------- CONTACT US ----------------------------------------------->
+<div class="container" id="contact">
+    <h2>CONTACT US</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+            <img src="./icons/localisation-pia.png" alt="" width="60px">
+            <p>Afrique Sénégal Dakar
+                <br>Nous répondons à vos besoins partout au Sénégal 7j/7
+            </p>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <img src="./icons/téléphone-de-taxi.jpg" alt="" width="60px">
+            <p>00221773264098
+            <br>+221773264098
+            </p>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <img src="./icons/envelope-icon.jpg" alt="" width="60px">
+            <p>SidneyShop@gmail.com
+            <br>SidneyShop@gmail.com
+            </p>
+        </div>
+    </div>
+    <hr> 
+    <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="phn" placeholder="Your Phone">
+            </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+            <div class="form-group">
+                <input type="text" class="form-control" id="eml" placeholder="Your E-mail">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="sbj" placeholder="Subject">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" id="comment" rows="5" placeholder="Type your Message"></textarea>
+  </div>
+ <div class="message" style="padding: 10px;"><button>Send Message</button></div>
+</div>
+<!--------------------------------------------------- FIN CONTACT US ---------------------------------------------->
+<!------------------------------------------------------ FOOTER --------------------------------------------------->
+<footer id="footer" style="margin-top: 50px;">
+<div class="footer-top"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+                <a href="#"><img src="./icons/chariot.jpg" alt="" width="32px">SIDNEY</a>
+                <p>
+                    Afrique <br>
+                    Sénégal <br>
+                    Dakar <br>
+                    <strong>Phone:</strong>+221773264098 <br>
+                    <strong>E-mail:</strong>SidneyShop@gmail.com <br>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+            <ul>
+                <li><i class="bx bx-chevron-right"></i><a href="SidneyShop.html">Accueil</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">About Us</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Contact Us</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Privacy policy</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+            <ul>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Mode Homme</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Mode Femme</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Electronique</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Electromenager</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Sport</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="#">Alimentation</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Network</h4>
+                <p>Visiter votre boutique sur vos réseaux sociaux et n'oublie pas de donner votre avis de client. SIDNEY la boutique pour répondre à vos attentes</p>
+                <div class="social-links mt-3">
+                    <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://web.facebook.com/login/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-4">
+    <div class="copyright">
+        &copy; Copyright <strong><span>Online Shop</span></strong>. All Right Reseved
+    </div>
+    <div class="credits">
+        Designed by <a href="#">Pirhonu coding</a>
+    </div>
+</div>
+</footer>
+<!-------------------------------------------------- FIN FOOTER -------------------------------------------------------->
+</body>
+</html>
