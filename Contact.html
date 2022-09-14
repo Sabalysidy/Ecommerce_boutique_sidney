@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidney</title>
+    <link rel="stylesheet" href="Sidney.css">
+    <!----------------------------------------------- Bootstrap links -------------------------------------------------------->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <!----------------------------------------------- Bootstrap links ------------------------------------------------------>
+    <!--------------------------------------------------- icons links -------------------------------------------------------->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--------------------------------------------------- icons links ---------------------------------------------->
+</head>
+<body>
+    <!----------------------------------------------------- NAVBAR ------------------------------------------------->
+    <nav class="navbar navbar-expand-sm" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo"><img src="./icons/chariot.jpg" alt="" width="40px" style="margin-bottom: 5px; margin-right: 5px;"><span id="titre" style="color: blue; font-size: 23px;">S</span>IDNEY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span><img src="./icons/menu.png" alt="" width="20px" style="margin-right: 10px;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Sidney.html"> Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Category.html">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Promo.html">Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact US</a>
+              </li>
+            </ul>
+        </div>
+        
+        <div class="iconss" style="margin-left: 50px;">
+            <i class="bi bi-bell-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+              </svg> 
+            <!-- <span class="align-centere">5</span> -->
+        </div>
+<!---------------------------------------------------- LOGIN --------------------------------------------------------->
+<div class="connexion">
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px;" >Login</button>
+<div id="id01" class="modale">
+  <form class="modale-content animate" action="traitement.php" method="post">
+    <div class="imgcontaineur">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./icons/avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="containeur">
+        <h1 style="text-align: center; font-size: 25px; font-weight: bold;">Login</h1>
+        <p>Entrer vos coordonnées pour vous connectez à votre compte</p><hr>
+      <label for="uname"><b>E-mail/Telephone</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="containeur" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signbtn"><a href="formulaire2.html">Sign Up</a></button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> 
+<!----------------------------------------------------- FIN LOGIN --------------------------------------------------->
+        </div>
+      </nav>
+      <div class="input-cnt">
+        <input type="text" placeholder="Search here...">
+      </div>
+      <!------------------------------------------------- FIN NAVBAR ----------------------------------------------------->
+      <!------------------------------------------------------- CONTACT US ----------------------------------------------->
+<div class="container" id="contact">
+    <h2>CONTACT US</h2>
+    <hr>
+    <form class="modale-content animate" action="traitement.php" method="post">
+    <div class="row" style="margin: 20px;">
+        <div class="col-md-4 py-3 py-md-0">
+            <img src="./icons/localisation-pia.png" alt="" width="60px">
+            <p>Afrique Sénégal Dakar
+                <br>Nous répondons à vos besoins partout au Sénégal 7j/7
+            </p>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <img src="./icons/téléphone-de-taxi.jpg" alt="" width="60px">
+            <p>00221773264098
+            <br>+221773264098
+            </p>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <img src="./icons/envelope-icon.jpg" alt="" width="60px">
+            <p>SidneyShop@gmail.com
+            <br>SidneyShop@gmail.com
+            </p>
+        </div>
+    </div>
+    <hr> 
+    
+    <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+            <div class="form-group">
+                <input type="text" class="form-control" id="usr" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="phn" placeholder="Your Phone">
+            </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+            <div class="form-group">
+                <input type="text" class="form-control" id="eml" placeholder="Your E-mail">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="sbj" placeholder="Subject">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" id="comment" rows="5" placeholder="Type your Message"></textarea>
+  </div>
+ <div class="message" style="padding: 10px;"><button>Send Message</button></div>
+</div>
+</form>
+<!--------------------------------------------------- FIN CONTACT US ---------------------------------------------->
+</body>
+</html>

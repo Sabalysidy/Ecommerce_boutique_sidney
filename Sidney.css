@@ -419,7 +419,7 @@ input[type=text]{
     align-items: center;
 }
 
-#footer .footer-top .footer-links ul li :first-child{
+#footer .footer-top .footer-links ul li :first-child{ 
     padding-top: 0;
 }
 
