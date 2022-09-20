@@ -20,9 +20,9 @@
     <!----------------------------------------------------- NAVBAR ------------------------------------------------->
     <nav class="navbar navbar-expand-sm" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" id="logo"><img src="./icons/chariot.jpg" alt="" width="40px" style="margin-bottom: 5px; margin-right: 5px;"><span id="titre" style="color: blue; font-size: 23px;">S</span>IDNEY</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span><img src="./icons/menu.png" alt="" width="20px" style="margin-right: 10px;"></span>
+          <a class="navbar-brand" href="Sidney.html" id="logo"><img src="./icons/chariot.jpg" alt="" width="40px" style="margin-bottom: 5px; margin-right: 5px;"><span id="titre" style="color: blue; font-size: 23px;">S</span>IDNEY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="margin-right: 20%;">
+            <span><img src="./icons/menu.png" alt="" width="20px" style="margin-left: 85%;"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
@@ -36,69 +36,25 @@
                 <a class="nav-link" href="Promo.html">Promo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About US</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="Contact.html">Contact US</a>
               </li>
             </ul>
         </div>
-        <!-- <div class="icons" style="margin-right: 20px;">
-            <i class="bi bi-bag-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
-              </svg>
-            <span class="align-center">0</span>
-        </div> -->
-        <div class="iconss" style="margin-left: 50px;">
+        <div class="iconss">
             <i class="bi bi-bell-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
               </svg> 
-            <!-- <span class="align-centere">5</span> -->
+            <!-- <span class="align-centere">5</span> -->  
         </div>
 <!---------------------------------------------------- LOGIN --------------------------------------------------------->
 <div class="connexion">
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px;" >Login</button>
-<div id="id01" class="modale">
-  <form class="modale-content animate" action="traitement.php" method="post">
-    <div class="imgcontaineur">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="./icons/avatar.png" alt="Avatar" class="avatar">
-    </div>
-    <div class="containeur">
-        <h1 style="text-align: center; font-size: 25px; font-weight: bold;">Login</h1>
-        <p>Entrer vos coordonnées pour vous connectez à votre compte</p><hr>
-      <label for="uname"><b>E-mail/Telephone</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-    <div class="containeur" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signbtn"><a href="formulaire2.html">Sign Up</a></button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px; font-weight: bold;" ><a href="Connexion.html" style="text-decoration: none; color: black;"> Login</a></button>
 </div>
-</div>
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script> 
 <!----------------------------------------------------- FIN LOGIN --------------------------------------------------->
         </div>
       </nav>
-      <div class="input-cnt">
-        <input type="text" placeholder="Search here...">
+      <div class="input-cnt" style="background-color: black; max-width: 100%; margin-left: 0;">
+        <input type="text" placeholder="Search here..." style="max-width: 30%; margin-right: 30%; margin-left: 40%;">
       </div>
 <!------------------------------------------------- FIN NAVBAR ----------------------------------------------------->
 <!------------------------------------------------ HOME SECTION ---------------------------------------------------->
@@ -110,9 +66,9 @@ window.onclick = function(event) {
         <h5>Jusqu'à 20% de Réduction</h5>
         <a href="Category.html" class="btn">Achetez ici</a>
     </div>
-    <div class="img">
+    <!-- <div class="img">
         <img src="./image/ferli.png" alt="">
-    </div>
+    </div> -->
 </section>
 <!-------------------------------------------- FIN HOME SECTION ---------------------------------------------------->
 <!--------------------------------------------- TOP CARD START ----------------------------------------------------->
@@ -139,79 +95,9 @@ window.onclick = function(event) {
 <!----------------------------------------------- PRODUIT CARDS ---------------------------------------------------->
 <div class="container" id="product-cards">
 <!---------------------------------------------------- 1111 ------------------------------------------------------->
-    <h1 class="text-center">PRODUITS</h1>
+    <h1 class="text-center">PRODUITS</h1> 
+<hr>
     <div class="row" style="margin-top: 50px;">
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card">
-                <img src="./image/image3.jpg" alt="">
-
-                <div class="card-body">
-                    <!-- produit description -->
-                    <h3 class="text-center" style="font-size: 20px;">Pull stranger</h3>
-                    <!-- produit description -->  
-                    <div class="star text-center">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                      </div>
-                      <h5>10 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-                  </div>
-              </div>
-          </div>
-        <div class="col-md-3 py-3 py-md-0">
-          <div class="card">
-              <img src="./image/images51.jpg" alt="">
-              
-              <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">T-Shirt</h3>
-                  <div class="star text-center">
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                  </div>
-                  <h5>3 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-3 py-3 py-md-0">
-        <div class="card">
-            <img src="./image/image54.jpg" alt="">
-            
-            <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Super Chaussure</h3>
-                <div class="star text-center">
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                </div>
-                <h5>15 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-          <img src="./image/image3.jpg" alt="">
-          
-          <div class="card-body">
-            <h3 class="text-center" style="font-size: 20px;">Shirt4</h3>
-              <div class="star text-center">
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-              </div>
-              <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-          </div>
-      </div>
-  </div>
-  <hr>
   <!------------------------------------------------------- 2222 -------------------------------------------------->
   <div class="container" id="product-cards">
     <div class="row" style="margin-top: 50px;">
@@ -1025,14 +911,7 @@ window.onclick = function(event) {
     </div>
 </div>
 <!-------------------------------------------------- FIN OTHER PRODUCT --------------------------------------------->
-<!----------------------------------------------------- ABOUT US --------------------------------------------------->
-<div class="container" id="about">
-    <h1>ABOUT US</h1>
-    <hr>
-    <p>jdkjsl ojudo piod oihsp ppojids podkjc pooids oijicuscps oijkods oyudsqusq iuyysI IYFDIIS ihdy</p>
-    <hr>
-</div>
-<!--------------------------------------------------------- FIN ABOUT US ----------------------------------------------->
+
 <!------------------------------------------------------- CONTACT US ----------------------------------------------->
 <div class="container" id="contact">
     <h2>CONTACT US</h2>
@@ -1061,15 +940,15 @@ window.onclick = function(event) {
     <div class="row">
         <div class="col-md-6 py-3 py-md-0">
             <div class="form-group">
-                <input type="text" class="form-control" id="usr" placeholder="Your Name">
+                <input type="text" class="form-control" id="usr" placeholder="Prenom&Nom">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="phn" placeholder="Your Phone">
+                <input type="text" class="form-control" id="phn" placeholder="Telephone">
             </div>
         </div>
         <div class="col-md-6 py-3 py-md-0">
             <div class="form-group">
-                <input type="text" class="form-control" id="eml" placeholder="Your E-mail">
+                <input type="text" class="form-control" id="eml" placeholder="E-mail">
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="sbj" placeholder="Subject">
@@ -1077,18 +956,18 @@ window.onclick = function(event) {
         </div>
     </div>
     <div class="form-group">
-        <textarea class="form-control" id="comment" rows="5" placeholder="Type your Message"></textarea>
+        <textarea class="form-control" id="comment" rows="5" placeholder="Ecrire ici votre Message"></textarea>
   </div>
  <div class="message" style="padding: 10px;"><button>Send Message</button></div>
 </div>
 <!--------------------------------------------------- FIN CONTACT US ---------------------------------------------->
 <!------------------------------------------------------ FOOTER --------------------------------------------------->
-<footer id="footer" style="margin-top: 50px;">
+<footer id="footer" style="margin-top: 50px; max-width: 100%; margin-left: 0;">
 <div class="footer-top"> 
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
-                <a href="#"><img src="./icons/chariot.jpg" alt="" width="32px">SIDNEY</a>
+                <a href="Sidney.html"><img src="./icons/chariot.jpg" alt="" width="32px">SIDNEY</a>
                 <p>
                     Afrique <br>
                     Sénégal <br>
@@ -1100,9 +979,9 @@ window.onclick = function(event) {
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Useful Links</h4>
             <ul>
-                <li><i class="bx bx-chevron-right"></i><a href="SidneyShop.html">Accueil</a></li>
-                <li><i class="bx bx-chevron-right"></i><a href="#">About Us</a></li>
-                <li><i class="bx bx-chevron-right"></i><a href="#">Contact Us</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="Sidney.html">Accueil</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="About.html">About Us</a></li>
+                <li><i class="bx bx-chevron-right"></i><a href="Contact.html">Contact Us</a></li>
                 <li><i class="bx bx-chevron-right"></i><a href="#">Services</a></li>
                 <li><i class="bx bx-chevron-right"></i><a href="#">Privacy policy</a></li>
             </ul>

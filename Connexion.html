@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidney</title>
-    <link rel="stylesheet" href="Promo.css">
+    <link rel="stylesheet" href="Connexion.css">
     <!----------------------------------------------- Bootstrap links -------------------------------------------------------->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
 <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -48,10 +48,41 @@
       </div>
 <!---------------------------------------------------- LOGIN --------------------------------------------------------->
 <div class="connexion">
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px; font-weight: bold;" ><a href="Connexion.html" style="text-decoration: none; color: black;"> Login</a></button>
-</div>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px; font-weight: bold;" ><a href="Connexion.html" style="text-decoration: none; color: black;"> Login</a></button>
+  </div>
 </div>
 </nav>
+<!-----------------------------------------------------  FIN-NAVBAR ------------------------------------------------->
+<h3 style="text-align: center; padding: 20px;">Sign Up</h3>
+<div class="form-container">
+  <form action="traitement.php" method="get">
+    <div class="input-cnt">
+      <label for="prenom">Prenom :</label> </br>
+      <input type="text" placeholder="" name="prenom" id="prenom" autofocus>
+
+      <label for="nom">Nom :</label></br>
+      <input type="text" placeholder="" name="nom" id="nom">
+
+      <label for="adresse">Adresse :</label> </br>
+
+      <select name="adresse" id="adresse">
+        <optgroup label="Dakar">
+          <option value="mermoz">Mermoz</option>
+          <option value="keur-massar">Keur-Massar</option>
+          <option value="mermoz">Mermoz</option>
+          <option value="mermoz">Mermoz</option>
+          <option value="mermoz">Mermoz</option>
+        </optgroup>
+      </select>
+
+      <label for="email">E-mail :</label> </br>
+      <input type="email" placeholder="" name="email" id="email">
+
+      <label for="telephone">Telephone :</label> </br>
+      <input type="tel" placeholder="" name="telephone" id="telephone">
+    </div>
+  </form>
+</div>
 
 </body>
 </html>
