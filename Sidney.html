@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidney</title>
-    <link rel="stylesheet" href="Sidney.css">
+    <link rel="stylesheet" href="sidney.css">
     <!----------------------------------------------- Bootstrap links -------------------------------------------------------->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> -->
     <!----------------------------------------------- Bootstrap links ------------------------------------------------------>
     <!--------------------------------------------------- icons links -------------------------------------------------------->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--------------------------------------------------- icons links ---------------------------------------------->
 </head>
 <body>
     <!----------------------------------------------------- NAVBAR ------------------------------------------------->
     <nav class="navbar navbar-expand-sm" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Sidney.html" id="logo"><img src="./icons/chariot.jpg" alt="" width="40px" style="margin-bottom: 5px; margin-right: 5px;"><span id="titre" style="color: blue; font-size: 23px;">S</span>IDNEY</a>
+          <a class="navbar-brand" href="Sidney.html" id="logo"><img src="./icons/logosidnet.png" alt="" width="100px" style="margin-bottom: 5px; margin-right: 5px;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="margin-right: 20%;">
             <span><img src="./icons/menu.png" alt="" width="20px" style="margin-left: 85%;"></span>
           </button>
@@ -46,19 +49,27 @@
               </svg> 
             <!-- <span class="align-centere">5</span> -->  
         </div>
-<!---------------------------------------------------- LOGIN --------------------------------------------------------->
-<div class="connexion">
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px; font-weight: bold;" ><a href="Connexion.html" style="text-decoration: none; color: black;"> Login</a></button>
-</div>
-<!----------------------------------------------------- FIN LOGIN --------------------------------------------------->
+  <!---------------------------------------------------- LOGIN --------------------------------------------------------->
+  <div class="connexion">
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-right: 50px; font-weight: bold;" ><a href="Connecter.html" style="text-decoration: none; color: black;"> Login</a></button>
+  </div>
+  <!----------------------------------------------------- FIN LOGIN --------------------------------------------------->
         </div>
       </nav>
+  <!------------------------------------------------- FIN NAVBAR ----------------------------------------------------->
       <div class="input-cnt" style="background-color: black; max-width: 100%; margin-left: 0;">
-        <input type="text" placeholder="Search here..." style="max-width: 30%; margin-right: 30%; margin-left: 40%;">
+      
+        <input type="text" placeholder="Search here..." style="max-width: 50%; margin-right: 35%; margin-left: 20%;" >
+    
       </div>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form> -->
 <!------------------------------------------------- FIN NAVBAR ----------------------------------------------------->
 <!------------------------------------------------ HOME SECTION ---------------------------------------------------->
 <section class="home" id="home">
+
     <div class="content">
         <h3>La plus Grosse Vente</h3>
         <h2>Category <span class="changecontent"></span></h2>
@@ -66,9 +77,7 @@
         <h5>Jusqu'à 20% de Réduction</h5>
         <a href="Category.html" class="btn">Achetez ici</a>
     </div>
-    <!-- <div class="img">
-        <img src="./image/ferli.png" alt="">
-    </div> -->
+
 </section>
 <!-------------------------------------------- FIN HOME SECTION ---------------------------------------------------->
 <!--------------------------------------------- TOP CARD START ----------------------------------------------------->
@@ -94,7 +103,7 @@
 <!--------------------------------------------- FIN TOP CARD START ------------------------------------------------->
 <!----------------------------------------------- PRODUIT CARDS ---------------------------------------------------->
 <div class="container" id="product-cards">
-<!---------------------------------------------------- 1111 ------------------------------------------------------->
+
     <h1 class="text-center">PRODUITS</h1> 
 <hr>
     <div class="row" style="margin-top: 50px;">
@@ -103,10 +112,10 @@
     <div class="row" style="margin-top: 50px;">
         <div class="col-md-3 py-3 py-md-0">
             <div class="card">
-                <img src="./image/chaussures4.jpg" alt="">
+            <img src="./image/chaussures4.jpg" alt="">
                
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Shoes ClassiQ</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Shoes ClassiQ</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -123,7 +132,7 @@
               <img src="./image/louis-vuitton-tee-shirt.webp" alt="">
               
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">T-shirt Louis Vuitton</h3>
+                  <h3 class="text-center" style="font-size: 15px;">T-shirt Louis Vuitton</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -140,7 +149,7 @@
             <img src="./image/GLOBAL-AIR-39-GE-39-HD-LED-ANDROID-SMART-TV.jpg" alt="">
             
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Television</h3>
+                <h3 class="text-center" style="font-size: 15px;">Television</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -157,7 +166,7 @@
           <img src="./image/ecouteur.jpg" alt="">
          
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">Casque Boss</h3>
+              <h3 class="text-center" style="font-size: 15px;">Casque Boss</h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -178,7 +187,7 @@
                 <img src="./image/images74.jpg" alt="">
                
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Shirtmulticolor</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Shirtmulticolor</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -195,7 +204,7 @@
               <img src="./image/Electromenager-dakar-16-1200x1200.png" alt="">
              
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Pant2</h3>
+                  <h3 class="text-center" style="font-size: 15px;">Phone</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -212,7 +221,7 @@
             <img src="./image/pant4.jpg" alt="">
           
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Pantalon</h3>
+                <h3 class="text-center" style="font-size: 15px;">Pantalon</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -229,7 +238,7 @@
           <img src="./image/shoeasss.jpg" alt="">
         
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">Chaussure sport</h3>
+              <h3 class="text-center" style="font-size: 15px;">Chaussure sport</h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -250,7 +259,7 @@
                 <img src="./image/refrigerate-astech.jpg" alt="">
                 
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Refrigerateur</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Refrigerateur</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -267,7 +276,7 @@
               <img src="./image/images (24).jpeg" alt="">
              
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Airpod huawei</h3>
+                  <h3 class="text-center" style="font-size: 15px;">Airpod huawei</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -284,7 +293,7 @@
             <img src="./image/kxwus_512.jpg" alt="">
            
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Nouvelle Chaussure</h3>
+                <h3 class="text-center" style="font-size: 15px;">Nouvelle Chaussure</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -301,7 +310,7 @@
           <img src="./image/ordinateur-portable-chromebook.jpg" alt="">
          
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">Ordinateur ACER</h3>
+              <h3 class="text-center" style="font-size: 15px;">Ordinateur ACER</h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -322,7 +331,7 @@
                 <img src="./image/sandal.jpg" alt="">
                 
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Chaussure nP</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Chaussure nP</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -339,7 +348,7 @@
               <img src="./image/Support-electromenager-sans-roue.jpg" alt="">
              
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Machine lavé</h3>
+                  <h3 class="text-center" style="font-size: 15px;">Machine lavé</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -356,7 +365,7 @@
             <img src="./image/mens-sports-t-shirt-1580877431-5283090.jpeg" alt="">
         
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Lotde 3M-Sport</h3>
+                <h3 class="text-center" style="font-size: 15px;">Lotde 3M-Sport</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -373,7 +382,7 @@
           <img src="./image/vje6h_512.jpg" alt="">
        
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">NiceShoes</h3>
+              <h3 class="text-center" style="font-size: 15px;">NiceShoes</h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -394,7 +403,7 @@
                 <img src="./image/t141.jpg" alt="">
               
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">T-SHIRT Lvuitton</h3>
+                    <h3 class="text-center" style="font-size: 15px;">T-SHIRT Lvuitton</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -411,7 +420,7 @@
               <img src="./image/Tyrrell_Winston_Question_Mid_Shoes_White_GZ1565.jpg" alt="">
               
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Basquet</h3>
+                  <h3 class="text-center" style="font-size: 15px;">Basquet</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -428,7 +437,7 @@
             <img src="./image/petit-electro-cuisine.jpg" alt="">
             
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Chauffe-eau</h3>
+                <h3 class="text-center" style="font-size: 15px;">Chauffe-eau</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -445,7 +454,7 @@
           <img src="./image/MIONE-S20.png" alt="">
           
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">Telephone Mione</h3>
+              <h3 class="text-center" style="font-size: 15px;">Telephone Mione</h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -466,7 +475,7 @@
                 <img src="./image/images (21).jpeg" alt="">
              
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Ecouteur bluetooth</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Ecouteur bluetooth</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -483,7 +492,7 @@
               <img src="./image/images (25).jpeg" alt="">
            
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Talon</h3>
+                  <h3 class="text-center" style="font-size: 15px;">Talon</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -500,7 +509,7 @@
             <img src="./image/firgo.png" alt="">
            
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Congelateur</h3>
+                <h3 class="text-center" style="font-size: 15px;">Congelateur</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -517,7 +526,7 @@
           <img src="./image/azerty.jpg" alt="">
          
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">Pantalon Sport </h3>
+              <h3 class="text-center" style="font-size: 15px;">Pantalon Sport </h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -530,79 +539,8 @@
       </div>
   </div>
   <hr>
-<!---------------------------------------------------- 8888 ------------------------------------------------------>
-<div class="container" id="product-cards">
-    <div class="row" style="margin-top: 50px;">
-        <div class="col-md-3 py-3 py-md-0">
-            <div class="card">
-                <img src="./image/Como_Suit_Pants-Pants-LDM501001-350350-Dark_Grey_Melange_600x.png" alt="">
-                
-                <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Pantalon kaki</h3>
-                    <div class="star text-center">
-                        <i class="bx bxs-star checked"></i>
-                        <i class="bx bxs-star checked"></i>
-                        <i class="bx bxs-star checked"></i>
-                        <i class="bx bxs-star checked"></i>
-                        <i class="bx bxs-star checked"></i>
-                    </div>
-                    <h5>3 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 py-3 py-md-0">
-          <div class="card">
-              <img src="./image/image kufdj.jpeg" alt="">
-              
-              <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Pant Chinois</h3>
-                  <div class="star text-center">
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                      <i class="bx bxs-star checked"></i>
-                  </div>
-                  <h5>5 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-3 py-3 py-md-0">
-        <div class="card">
-            <img src="./image/image6.jpg" alt="">
-           
-            <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Ensemble Messi</h3>
-                <div class="star text-center">
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                    <i class="bx bxs-star checked"></i>
-                </div>
-                <h5>8 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-          <img src="./image/images50.jpeg" alt="">
-         
-          <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">T-Shirt N/B</h3>
-              <div class="star text-center">
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-                  <i class="bx bxs-star checked"></i>
-              </div>
-              <h5>2 000Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
-          </div>
-      </div>
-  </div>
-  <hr>
-<!---------------------------------------------------- 9999 ------------------------------------------------------->
+
+<!---------------------------------------------------- 8888 ------------------------------------------------------->
 <div class="container" id="product-cards">
     <div class="row" style="margin-top: 50px;">
         <div class="col-md-3 py-3 py-md-0">
@@ -610,7 +548,7 @@
                 <img src="./image/images (3).jpeg" alt="">
                 
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">T-Shirt blue</h3>
+                    <h3 class="text-center" style="font-size: 15px;">T-Shirt blue</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -627,7 +565,7 @@
               <img src="./image/imagessesuz.jpg" alt="">
               
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Marron-Shoes</h3>
+                  <h3 class="text-center" style="font-size: 15px;">Marron-Shoes</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -644,7 +582,7 @@
             <img src="./image/Custom-T-Shirts-100-Cotton-Men.jpg" alt="">
            
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">T-Shirt logo</h3>
+                <h3 class="text-center" style="font-size: 15px;">T-Shirt logo</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -661,7 +599,7 @@
           <img src="./image/chaussures5.jpg" alt="">
           
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">Chaussure classiQ Noir</h3>
+              <h3 class="text-center" style="font-size: 15px;">Chaussure classiQ Noir</h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -675,14 +613,14 @@
   </div>
   <hr>
 <!----------------------------------------------------- 1010 ------------------------------------------------------>
-<div class="container" id="product-cards">
+<!-- <div class="container" id="product-cards">
     <div class="row" style="margin-top: 50px;">
         <div class="col-md-3 py-3 py-md-0">
             <div class="card">
                 <img src="./image/images (22).jpeg" alt="">
                 
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Sport1</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Sport1</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -699,7 +637,7 @@
               <img src="./image/images (5).jpeg" alt="">
               
               <div class="card-body">
-                  <h3 class="text-center" style="font-size: 20px;">Sport2</h3>
+                  <h3 class="text-center" style="font-size: 15px;">Sport2</h3>
                   <div class="star text-center">
                       <i class="bx bxs-star checked"></i>
                       <i class="bx bxs-star checked"></i>
@@ -716,7 +654,7 @@
             <img src="./image/sport3.jpeg" alt="">
             
             <div class="card-body">
-                <h3 class="text-center" style="font-size: 20px;">Sport3</h3>
+                <h3 class="text-center" style="font-size: 15px;">Sport3</h3>
                 <div class="star text-center">
                     <i class="bx bxs-star checked"></i>
                     <i class="bx bxs-star checked"></i>
@@ -733,7 +671,7 @@
           <img src="./image/t-shirt-sportee-100-coton-homme-blanc.jpg" alt="">
          
           <div class="card-body">
-              <h3 class="text-center" style="font-size: 20px;">Sport4</h3>
+              <h3 class="text-center" style="font-size: 15px;">Sport4</h3>
               <div class="star text-center">
                   <i class="bx bxs-star checked"></i>
                   <i class="bx bxs-star checked"></i>
@@ -747,7 +685,7 @@
   </div>
 <hr>
 </div>
-</div>
+</div> -->
 <!------------------------------------------------ FIN PRODUIT CARDS ----------------------------------------------->
 <!--------------------------------------------------------- BANNER ------------------------------------------------->
 <div class="container">
@@ -774,7 +712,7 @@
                 <img src="./image/sac6 (1).jpg" alt="">
                
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Sac1</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Sac1</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -782,7 +720,8 @@
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
                     </div>
-                    <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                    <h5>5 600 Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                    <h5 style="text-decoration: line-through;">7 000 Fcfa</h5>
                 </div>
             </div>
         </div>
@@ -791,7 +730,7 @@
                 <img src="./image/sac4.jpg" alt="">
                 
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Sac2</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Sac2</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -800,6 +739,7 @@
                         <i class="bx bxs-star checked"></i>
                     </div>
                     <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                    <h5 style="text-decoration: line-through;">7 000 Fcfa</h5>
                 </div>
             </div>
         </div>
@@ -808,7 +748,7 @@
                 <img src="./image/sac2.jpg" alt="">
                 
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Sac3</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Sac3</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -817,6 +757,7 @@
                         <i class="bx bxs-star checked"></i>
                     </div>
                     <h5>5 600Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                    <h5 style="text-decoration: line-through;">7 000 Fcfa</h5>
                 </div>
             </div>
         </div>
@@ -825,7 +766,7 @@
                 <img src="./image/sac3.jpg" alt="">
              
                 <div class="card-body">
-                    <h3 class="text-center" style="font-size: 20px;">Sac à main Noir</h3>
+                    <h3 class="text-center" style="font-size: 15px;">Sac 4</h3>
                     <div class="star text-center">
                         <i class="bx bxs-star checked"></i>
                         <i class="bx bxs-star checked"></i>
@@ -834,11 +775,12 @@
                         <i class="bx bxs-star checked"></i>
                     </div>
                     <h5>9 500Fcfa<span><i><a href="paiement.html"><button class="button" style="height: 10%; border-radius: 10px;">Buy</button></a></i></span></h5>
+                    <h5 style="text-decoration: line-through;">7 000 Fcfa</h5>
                 </div>
             </div>
         </div>
     </div>
-<!------------------------------------------------------- 2222 ---------------------------------------------------->
+<!------------------------------------------------------- 222& ---------------------------------------------------->
     <div class="row" style="margin-top: 50px;">
         <div class="col-md-3 py-3 py-md-0">
             <div class="card">
@@ -914,6 +856,7 @@
 
 <!------------------------------------------------------- CONTACT US ----------------------------------------------->
 <div class="container" id="contact">
+
     <h2>CONTACT US</h2>
     <hr>
     <div class="row">
@@ -959,15 +902,16 @@
         <textarea class="form-control" id="comment" rows="5" placeholder="Ecrire ici votre Message"></textarea>
   </div>
  <div class="message" style="padding: 10px;"><button>Send Message</button></div>
+ 
 </div>
 <!--------------------------------------------------- FIN CONTACT US ---------------------------------------------->
 <!------------------------------------------------------ FOOTER --------------------------------------------------->
-<footer id="footer" style="margin-top: 50px; max-width: 100%; margin-left: 0;">
+<footer id="footer" style="margin-top: 80px; max-width: 100%; margin-left: 0%;">
 <div class="footer-top"> 
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
-                <a href="Sidney.html"><img src="./icons/chariot.jpg" alt="" width="32px">SIDNEY</a>
+                <a href="Sidney.html"><img src="./icons/logosidnet.png" alt="" width="100px"></a>
                 <p>
                     Afrique <br>
                     Sénégal <br>

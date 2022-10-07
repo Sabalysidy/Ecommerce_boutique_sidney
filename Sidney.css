@@ -83,12 +83,30 @@ input[type=text]{
 
 
 /****************************************** FIN DE LA NAVBAR ****************************************************************/
+
+/********************************************************* LOGIN *****************************************************/
+
+button {
+    background-color: gold;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+/********************************************************* FIN-LOGIN *****************************************************/
+
 /************************************************** SEARCH *****************************************************************/
-.input-cnt{
+/* .input-cnt{
     display: flex;
     padding: 10px;
     margin-left: 25%;
-}
+} */
 
 .input-cnt > input{
     outline: none;
@@ -209,7 +227,7 @@ input[type=text]{
 }
 
 .checked{
-    color: white;
+    color: goldenrod;
 }
 
 #product-cards h5{
@@ -359,15 +377,17 @@ input[type=text]{
     padding: 20px;
     color: #d0d0d0;
     font-size: 14px;
-    background: #111111;
+    background-color: #111111;
     height: auto;
-    margin: auto;
-    width: 100%;
+    max-width: 200%; 
 }
 
-#footer .footer-top{
-    background: #111111;
+.footer-top{
+    background-color: #111111;
     color: #FFF;
+    max-width: 200%;
+    width: 100%;
+    margin-left: 0;
 }
 
 #footer .footer-top .footer-contact a{
@@ -482,19 +502,3 @@ html{
     line-height: 50px;
 }
 
-/********************************************************* LOGIN *****************************************************/
-
-button {
-  background-color: gold;
-  color: black;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-/********************************************************* FIN-LOGIN *****************************************************/
